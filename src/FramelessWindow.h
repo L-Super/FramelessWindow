@@ -67,6 +67,7 @@ protected:
 
 protected:
     void ChangeCursorShape(WhichEdge edge);
+	Qt::Edge CovertEdgeEnum(WhichEdge edge);
 
 private:
     QScopedPointer<FramelessWindowPrivate> d_ptr;
