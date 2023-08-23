@@ -271,4 +271,6 @@ int FramelessWindow::GetBorderWidth() {
 
 void FramelessWindow::SetCentralWidget(QWidget* widget) {
     layout()->addWidget(widget);
+
+	widget->setMouseTracking(true);
 }
