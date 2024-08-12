@@ -256,7 +256,7 @@ void FramelessWindow::mouseReleaseEvent(QMouseEvent* event) {
     d->isMoving = false;
     d->isResizing = false;
     d->whichEdge = WhichEdge::NoneEdge;
-    QWidget::mouseMoveEvent(event);
+    QWidget::mouseReleaseEvent(event);
 }
 
 void FramelessWindow::SetBorderWidth(int width) {
